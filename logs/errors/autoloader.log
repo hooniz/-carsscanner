@@ -1,0 +1,5 @@
+[2022-12-23 15:11:56 ERROR at /var/www/html/framework/app/modules/system/lib/logger/Logger.php:45] Class testclass doesnt exist. Please create file with this class
+[2022-12-23 15:12:24 ERROR at /var/www/html/framework/app/modules/system/lib/autoloader/Autoloader.php:62] Class testclass doesnt exist. Please create file with this class
+[2022-12-23 15:31:24 ERROR at /var/www/html/framework/app/modules/system/lib/autoloader/Autoloader.php:62] Class testclass doesnt exist. Please create file with this class
+[2022-12-23 16:19:37 ERROR at /var/www/html/framework/app/modules/system/lib/autoloader/Autoloader.php:62] Class testclass doesnt exist. Please create file with this class
+[2022-12-23 16:19:56 ERROR at /var/www/html/framework/app/modules/system/lib/autoloader/Autoloader.php:62] Class testclass doesnt exist. Please create file with this class

@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Система CarScanner</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/navbar-bottom/">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <link href="styles/main.css" rel="stylesheet">
+
+    <link rel="icon" href="assets/favicon.png" type="image/x-icon">
+
+</head>
+<body>
+<div class="container-fluid d-flex h-100 justify-content-center align-items-center p-0">
+    <div class="col-sm-12 col-md-8 col-md-offset-2 col-lg-6">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Мой автомобиль
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">Модель автомобиля - Toyota Land Cruiser 200</li>
+                            <li class="list-group-item">Год выпуска - 2018</li>
+                            <li class="list-group-item">Тип двигателя - бензиновый</li>
+                            <li class="list-group-item">Тип топлива - 92</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Показания системы
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <table class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th scope="col">Критерии оценки</th>
+                                <th scope="col">Показатель</th>
+                                <th scope="col">Результат</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row">Расход топлива</th>
+                                <td>В среднем - 6.5 л/100км.</td>
+                                <td>В норме</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Расход масла</th>
+                                <td>166мл/1000км.</td>
+                                <td>В норме</td>
+                            </tr>
+                            <tr class="table-danger">
+                                <th scope="row">Отклик двигателя на нажатие педали газа</th>
+                                <td>9.4 сек.</td>
+                                <td>Выше нормы</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Оценка качества топлива в баке</th>
+                                <td>98</td>
+                                <td>В норме</td>
+                            </tr>
+                            <tr class="table-danger">
+                                <th scope="row">Выброс CO2 в окр. среду</th>
+                                <td>140гр/км</td>
+                                <td>Выше нормы</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Рекомендации
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <h5>
+                            Расход топлива
+                        </h5>
+                        <p>
+                            Запишитесь на диагностику Вашего автомобиля в ближайший дилерский центр.
+                            Средний расход топлива Вашего автомобиля должен находиться в пределах 6-8 литров на трассе, в городе 13-15 литров.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="assets/logo-navbar.png" alt=""/></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="main.html">Данные</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Связь с менеджером</a>
+                </li>
+                <li class="nav-item dropup">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Профиль</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Личный кабинет</a></li>
+                        <li><a class="dropdown-item" href="#">Ввести показания врчуную</a></li>
+                        <li><a class="dropdown-item text-danger" href="#">Выйти</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
